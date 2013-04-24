@@ -20,4 +20,4 @@ no_buffers yes
 uppercase no
 
 TEXT
-CPU $cpu%  RAM $memperc%  / ${fs_used /}/${fs_size /}  /home ${fs_used /home}/${fs_size /home}  ${time %a} ${time %b} ${time %d} ${time %I}:${time %M}:${time %S} ${time %p} É 
+$if_mpd_playing ê $mpd_artist - $mpd_title $endif CPU $cpu%  RAM $memperc%  / ${fs_used /}/${fs_size /}  /home ${fs_used /home}/${fs_size /home}  ${time %a} ${time %b} ${time %d} ${time %I}:${time %M}:${time %S} ${time %p} É 

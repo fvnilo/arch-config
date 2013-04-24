@@ -1,0 +1,23 @@
+sw_volume: 100
+audio_device_state:1:Laptop soundcard
+state: play
+current: 1
+time: 189
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: nan
+playlist_begin
+0:Electronic - Trip Hop/Bonobo - Black Sands/Black Sands 01 Prelude.mp3
+1:Electronic - Trip Hop/Bonobo - Black Sands/Black Sands 02 Kiara.mp3
+2:Electronic - Trip Hop/Bonobo - Black Sands/Black Sands 03 Kong.mp3
+3:Electronic - Trip Hop/Bonobo - Black Sands/Black Sands 05 El Toro.mp3
+4:Electronic - Trip Hop/Bonobo - Black Sands/Black Sands 06 We Could Forever.mp3
+5:Electronic - Trip Hop/Bonobo - Black Sands/Black Sands 07 1009.mp3
+6:Electronic - Trip Hop/Bonobo - Black Sands/Black Sands 08 All In Forms.mp3
+7:Electronic - Trip Hop/Bonobo - Black Sands/Black Sands 11 Animals.mp3
+8:Electronic - Trip Hop/Bonobo - Black Sands/Black Sands 12 Black Sands.mp3
+playlist_end
