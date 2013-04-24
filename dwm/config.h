@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]            = "-*-terminus-medium-r-*-*-16-*-*-*-*-*-*-*";
+static const char font[]            = "-*-ohsnap.icons-medium-r-normal-*-11-*-*-*-*-*-*-*";
 static const char normbordercolor[] = "#B9B9B9";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#B9B9B9";
@@ -16,7 +16,7 @@ static const char termfg[]          = "white";
 static const char termbg[]          = "black";
 
 /* tagging */
-static const char *tags[] = { "term", "dev", "web", "media", "misc" };
+static const char *tags[] = { "¹ main", "Ç dev", "© web", "à media", "º misc" };
 
 static const Rule rules[] = {
 	/* class          instance    title       tags mask     isfloating   monitor */
@@ -31,9 +31,9 @@ static const Bool resizehints = True; /* True means respect size hints in tiled 
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[T]",      tile },    /* first entry is default */
-	{ "[F]",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "[ü]",      tile },    /* first entry is default */
+	{ "[ý]",      NULL },    /* no layout function means floating behavior */
+	{ "[ÿ]",      monocle },
 };
 
 /* key definitions */
@@ -49,7 +49,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "xterm", "-fg", termfg, "-bg", termbg, NULL };
+static const char *termcmd[]  = { "urxvt", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
