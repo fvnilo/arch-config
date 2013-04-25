@@ -20,4 +20,4 @@ no_buffers yes
 uppercase no
 
 TEXT
-$if_mpd_playing ê $mpd_artist - $mpd_title [$mpd_elapsed/$mpd_length] í $mpd_vol $endif Ñ $cpu% Î $memperc% / ${fs_used_perc /}% /home ${fs_used_perc /home}% É ${time %a} ${time %b} ${time %d} ${time %k:%M:%S}
+$if_mpd_playing ê $mpd_artist - $mpd_title [$mpd_elapsed/$mpd_length] í $mpd_vol $endif Ì ${execpi 300 python ~/.gmail.py} Ñ $cpu% Î $memperc% / ${fs_used_perc /}% /home ${fs_used_perc /home}% É ${time %a} ${time %b} ${time %d} ${time %k:%M:%S}

@@ -5,7 +5,7 @@ static const char font[]            = "-*-ohsnap.icons-medium-r-normal-*-11-*-*-
 static const char normbordercolor[] = "#B9B9B9";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#B9B9B9";
-static const char selbordercolor[]  = "#B9B9B9";
+static const char selbordercolor[]  = "#FFFFFF";
 static const char selbgcolor[]      = "#222222";
 static const char selfgcolor[]      = "#FFFFFF";
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
@@ -33,7 +33,7 @@ static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[ü]",      tile },    /* first entry is default */
 	{ "[ý]",      NULL },    /* no layout function means floating behavior */
-	{ "[ÿ]",      monocle },
+	{ "[¿]",      monocle },
 };
 
 /* key definitions */
