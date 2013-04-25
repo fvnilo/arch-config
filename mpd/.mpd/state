@@ -1,0 +1,28 @@
+sw_volume: 80
+audio_device_state:1:Laptop soundcard
+state: play
+current: 2
+time: 24
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: nan
+playlist_begin
+0:Folk/Jack Johnson - In Between Dreams/01 - Better Together.mp3
+1:Folk/Jack Johnson - In Between Dreams/02 - Never Know.mp3
+2:Folk/Jack Johnson - In Between Dreams/03 - Banana Pancakes.mp3
+3:Folk/Jack Johnson - In Between Dreams/04 - Good People.mp3
+4:Folk/Jack Johnson - In Between Dreams/05 - No Other Way.mp3
+5:Folk/Jack Johnson - In Between Dreams/06 - Sitting, Waiting, Wishing.mp3
+6:Folk/Jack Johnson - In Between Dreams/07 - Staple It Together.mp3
+7:Folk/Jack Johnson - In Between Dreams/08 - Situations.mp3
+8:Folk/Jack Johnson - In Between Dreams/09 - Crying Shame.mp3
+9:Folk/Jack Johnson - In Between Dreams/10 - If I Could.mp3
+10:Folk/Jack Johnson - In Between Dreams/11 - Breakdown.mp3
+11:Folk/Jack Johnson - In Between Dreams/12 - Belle.mp3
+12:Folk/Jack Johnson - In Between Dreams/13 - Do You Remember.mp3
+13:Folk/Jack Johnson - In Between Dreams/14 - Constellations.mp3
+playlist_end
