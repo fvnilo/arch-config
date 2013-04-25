@@ -5,5 +5,5 @@ URxvt*.transparent: true
 URxvt*.shading: 15 
 URxvt.scrollstyle: plain
 URxvt*foreground: White
-URxvt*font: -*-ohsnap-medium-r-normal-*-11-*-*-*-*-*-*-*
-URxvt*boldFont: -*-ohsnap-bold-r-normal-*-11-*-*-*-*-*-*-*
+!URxvt*font: -*-ohsnap-medium-r-normal-*-11-*-*-*-*-*-*-*
+!URxvt*boldFont: -*-ohsnap-bold-r-normal-*-11-*-*-*-*-*-*-*

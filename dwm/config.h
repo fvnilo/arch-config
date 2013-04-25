@@ -12,15 +12,13 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
-static const char termfg[]          = "white";
-static const char termbg[]          = "black";
 
 /* tagging */
-static const char *tags[] = { "¹ main", "Ç dev", "© web", "à media", "º misc" };
+static const char *tags[] = { "¹ main", "Ç dev", "ª office", "© web", "à media", "º misc" };
 
 static const Rule rules[] = {
 	/* class          instance    title       tags mask     isfloating   monitor */
-	{ "Chromium",     NULL,       NULL,       1 << 2,       True,       -1 },
+	{ "Chromium",     NULL,       NULL,       1 << 3,       True,       -1 },
 	{ "sublime-text", NULL,       NULL,       1 << 1,       True,       -1 },
 };
 
@@ -33,7 +31,7 @@ static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[ü]",      tile },    /* first entry is default */
 	{ "[ý]",      NULL },    /* no layout function means floating behavior */
-	{ "[¿]",      monocle },
+	{ "[ ]",      monocle },
 };
 
 /* key definitions */

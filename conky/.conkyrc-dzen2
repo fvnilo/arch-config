@@ -1,0 +1,25 @@
+# set to yes if you want Conky to be forked in the background
+
+background no 
+cpu_avg_samples 2
+double_buffer yes
+default_bar_size 20 6
+out_to_console yes
+out_to_x no 
+
+# Update interval in seconds
+update_interval 1
+
+# Add spaces to keep things from moving about?  This only affects certain objects.
+use_spacer none
+
+# Subtract file system buffers from used memory?
+no_buffers yes
+
+# set to yes if you want all text to be in uppercase
+uppercase no
+
+TEXT
+$if_mpd_playing ^fg(\#ffffff)ê^fg() $mpd_artist - $mpd_title [$mpd_elapsed/$mpd_length] ^fg(\#ffffff)í ^fg()$mpd_vol $endif ^fg(\#ffffff)Ì^fg() ${execpi 300 python ~/.gmail.py} ^fg(\#ffffff)Ñ^fg() $cpu% ^fg(\#ffffff)Î^fg() $memperc% ^fg(\#ffffff)/^fg() ${fs_used_perc /}% ^fg(\#ffffff)/home^fg() ${fs_used_perc /home}% ^fg(\#ffffff)É^fg() ${time %a} ${time %b} ${time %d} ${time %k:%M:%S}
+#$if_mpd_playing ê $mpd_artist - $mpd_title [$mpd_elapsed/$mpd_length] í $mpd_vol $endif Ì ${execpi 300 python ~/.gmail.py} Ñ $cpu% Î $memperc% / ${fs_used_perc /}% /home ${fs_used_perc /home}% É ${time %a} ${time %b} ${time %d} ${time %k:%M:%S}
+#^fg(\#ff0000)${loadavg 1 2 3} ^fg()${time %a %b %d %I:%M%P}
