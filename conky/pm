@@ -1,0 +1,26 @@
+#!/bin/sh
+
+printf "p: Power off\n"
+printf "r: Reboot\n"
+printf "(p or r ?) "
+read option
+
+
+if [[ $option =~ ^p|r ]]
+then 
+  printf "Are you sure ? (y/n) "
+  read accept
+else exit
+fi
+
+if [[ $accept =~ ^n ]]
+then exit
+fi
+
+if [[ $option == "p" ]]
+then poweroff
+fi
+
+if [[ $option == "r" ]] 
+then reboot
+fi

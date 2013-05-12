@@ -20,4 +20,4 @@ no_buffers yes
 uppercase no
 
 TEXT
-$if_mpd_playing ^fg(\#ffffff)ê^fg() $mpd_artist - $mpd_title [$mpd_elapsed/$mpd_length] ^fg(\#ffffff)í ^fg()$mpd_vol $endif ^fg(\#ffffff)Ì^fg() ${execpi 300 python ~/.gmail.py} ^fg(\#ffffff)Ñ^fg(\#2BFBFF) $cpu% ^fg(\#ffffff)Î^fg(\#57A8FF) $memperc% ^fg(\#ffffff)/^fg(\#3BFF68) ${fs_used_perc /}% ^fg(\#ffffff)/home^fg(\#FFFC66) ${fs_used_perc /home}% ^fg(\#ffffff)É^fg() ${time %a} ${time %b} ${time %d} ${time %k:%M:%S}
+^ca(1, thunderbird)^fg(\#31F56F)Ì^fg(white) ${execpi 300 python ~/.gmail.py}^fg(\#31F56F)^ca()  Ñ^fg(white) $cpu%  ^fg(\#31F56F)Î^fg(white) $memperc% ^fg(\#31F56F) /^fg(white) ${fs_used_perc /}%  ^fg(\#31F56F)/home^fg(white) ${fs_used_perc /home}%  ^fg(\#31F56F)¸^fg(white) ${time %H:%M}^ca(1, urxvt -e alsamixer)^fg() í^ca() ^ca(1, urxvt -e ~/pm)µ ^ca()

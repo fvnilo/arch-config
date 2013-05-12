@@ -2,8 +2,8 @@
 
 from urllib.request import FancyURLopener
 
-username = 'ny.fanilo'
-password  = 'passwordhere' #password generated from access restriction
+username = 'usernamehere'
+password = 'passwordhere' #password generated from access restriction
 
 url = 'https://%s:%s@mail.google.com/mail/feed/atom' % (username, password)
 

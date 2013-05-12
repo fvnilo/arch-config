@@ -1,0 +1,22 @@
+# Randomly choose a wallpaper.
+choice=$(find ~/wallpapers -type f \( -name '*.jpg' -o -name '*.png' \) -print0 | shuf -n1 -z)
+
+# Show to user and ask if he wants it.
+printf "New proposed wallpaper is: %s \n" "$choice"
+feh "$choice"
+printf "Accept ? (y/n) "
+read accept
+
+# If user wants new wallpaper, change config.
+if  [[ "$accept" =~ ^y|^Y ]]; then
+    current_wallpaper=~/.config/current_wallpaper
+    if [ -f $current_wallpaper ]; 
+    then
+        # Replace file content. We are dealing with paths so we use |'s 
+        sed -i "s|.*|$choice|" $current_wallpaper
+    else
+       # Create the new file.
+       touch $current_wallpaper
+       echo "$choice" >>  $current_wallpaper
+    fi
+fi
