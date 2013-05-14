@@ -1,0 +1,4 @@
+#!/bin/sh
+
+wallpaper=$(head -n 1 ~/.config/current_wallpaper)
+feh --bg-scale "$wallpaper"

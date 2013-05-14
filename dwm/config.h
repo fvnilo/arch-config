@@ -111,5 +111,5 @@ static Button buttons[] = {
 /* custom functions */
 int
 changekblayout(const Arg *arg){
-	return system("~/.switchkb");
+	return system("~/bin/switchkb");
 }
