@@ -22,9 +22,9 @@ font pango:Tamsyn 9
 new_window 1pixel 
 
 # class                 border  backgr. text    indicator
-client.focused          #777777 #777777 #ffffff #2e90f2
-client.focused_inactive #777777 #777777 #ffffff #777777
-client.unfocused        #777777 #222222 #888888 #292d2e
+client.focused          #000000 #000000 #ffffff #2e90f2
+client.focused_inactive #000000 #000000 #ffffff #000000
+client.unfocused        #000000 #222222 #888888 #292d2e
 client.urgent           #2f343a #900000 #ffffff #900000
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -32,6 +32,9 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec urxvt
+
+# start rox
+bindsym $mod+e exec rox
 
 #change keyboard layout
 bindsym $mod+k exec ~/bin/switchkb
@@ -67,7 +70,7 @@ bindsym $mod+f fullscreen
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+q layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -131,11 +134,10 @@ bar {
         status_command $HOME/bin/conky-i3bar
 	position       top 
         tray_output    none 
-
 	colors {
         	background #222222
         	statusline #ffffff
-        	separator  #aaaaaa
+        	separator  #222222
 
         	focused_workspace  #222222 #222222 #31F56F
         	active_workspace   #222222 #222222 #ffffff
