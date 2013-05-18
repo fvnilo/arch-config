@@ -35,8 +35,24 @@ cpu_avg_samples 2
 TEXT
 
 # JSON for i3bar
- [{ "full_text" : "CPU >> ${cpu}%", "color" : "\#2E90F2" },
-  { "full_text" : "RAM >> ${memperc}%" , "color" : ${if_match ${memperc}<90}"\#31f56f"${else}"\#ff0000"${endif} },
-  { "full_text" : "/ >> ${fs_used_perc /}%" , "color" : "\#A8FFFE" },
-  { "full_text" : "/home >> ${fs_used_perc /home}%" , "color" : "\#FFF480" }, 
-  { "full_text" : "${time %H:%M}" }],
+ [{ "full_text" : "[", "color" : "\#31F56F", "separator_block_width" : 0 },
+  { "full_text" : "CPU >> ${cpu}%", "color" : "\#888888", "separator_block_width" : 0},
+  { "full_text" : "]", "color" : "\#31F56F", "separator_block_width" : 0 },
+  
+  { "full_text" : "[", "color" : "\#31F56F", "separator_block_width" : 0 },
+  { "full_text" : "RAM >> ${memperc}%", "color" : ${if_match ${memperc}<90}"\#888888"${else}"\#ff0000"${endif}, "separator_block_width" : 0},
+  { "full_text" : "]", "color" : "\#31F56F", "separator_block_width" : 0 },
+
+  { "full_text" : "[", "color" : "\#31F56F", "separator_block_width" : 0 },
+  { "full_text" : "/ >> ${fs_used_perc /}%", "color" : "\#888888", "separator_block_width" : 0},
+  { "full_text" : "]", "color" : "\#31F56F", "separator_block_width" : 0 },
+
+  { "full_text" : "[", "color" : "\#31F56F", "separator_block_width" : 0 },
+  { "full_text" : "/home >> ${fs_used_perc /home}%", "color" : "\#888888", "separator_block_width" : 0},
+  { "full_text" : "]", "color" : "\#31F56F", "separator_block_width" : 0 },
+
+ { "full_text" : "[", "color" : "\#31F56F", "separator_block_width" : 0 },
+ { "full_text" : "inbox >> ${execpi 300 python ~/.gmail.py}", "color" : "\#888888", "separator_block_width" : 0},
+ { "full_text" : "]", "color" : "\#31F56F", "separator_block_width" : 5 },
+
+  { "full_text" : "${time %a %d %b %Y %I:%M %p %z}" }],
