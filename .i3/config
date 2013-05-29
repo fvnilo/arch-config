@@ -42,7 +42,14 @@ bindsym $mod+k exec ~/bin/switchkb
 # start thunderbird
 bindsym $mod+m exec thunderbird
 
-
+# mpd control
+bindsym $mod+Control+m exec ~/bin/mpd_start
+bindsym $mod+Control+Left exec mpc prev
+bindsym $mod+Control+Right exec mpc next
+bindsym $mod+Control+Up exec mpc stop
+bindsym $mod+Control+Down exec mpc toggle
+bindsym $mod+Control+minus exec mpc volume -2
+bindsym $mod+Control+plus exec mpc volume +2
 
 # kill focused window
 # original setting was mod+shift+q, changed to mod+c
@@ -78,7 +85,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+q layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+t floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -116,6 +123,7 @@ assign [class="Chromium"] "$ws3"
 assign [class="sublime-text"] "$ws2"
 assign [class="Audacious"] "$ws5"
 assign [class="Thunderbird"] "$ws4"
+assign [class="Vlc"] "$ws5"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

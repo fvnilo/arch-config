@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ !  -f ~/.mpd/pid ]
+then
+	mpd ~/.mpd/mpd.conf
+fi
