@@ -33,6 +33,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec urxvt
 
+# this terminal has a special Title so it can be set to open in floating mode
+bindsym $mod+Shift+Return exec urxvt -T 'Cli'
+
 # start rox
 bindsym $mod+e exec rox
 
@@ -41,6 +44,9 @@ bindsym $mod+k exec ~/bin/switchkb
 
 # start thunderbird
 bindsym $mod+m exec thunderbird
+
+# start chromium
+bindsym $mod+Shift+w exec chromium
 
 # mpd control
 bindsym $mod+Control+m exec ~/bin/mpd_start
@@ -124,6 +130,9 @@ assign [class="sublime-text"] "$ws2"
 assign [class="Audacious"] "$ws5"
 assign [class="Thunderbird"] "$ws4"
 assign [class="Vlc"] "$ws5"
+
+# special windows
+for_window [title="Cli"] floating enable
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
