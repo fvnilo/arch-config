@@ -161,7 +161,7 @@ bar {
         	statusline #ffffff
         	separator  #222222
 
-        	focused_workspace  #222222 #222222 #31F56F
+        	focused_workspace  #222222 #222222 #F5E89D
         	active_workspace   #222222 #222222 #ffffff
         	inactive_workspace #222222 #222222 #888888
         	urgent_workspace   #2f343a #900000 #ffffff

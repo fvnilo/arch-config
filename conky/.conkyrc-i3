@@ -36,20 +36,22 @@ TEXT
 
 # JSON for i3bar
  [
-  { "full_text" : "$if_mpd_playing[$endif", "color" : "\#31F56F", "separator_block_width" : 0 },
+  { "full_text" : "$if_mpd_playing[$endif", "color" : "\#F5E89D", "separator_block_width" : 0 },
   { "full_text" : "$if_mpd_playing$mpd_artist - $mpd_title | $mpd_percent% | vol >> $mpd_vol$endif", "color" : ${if_match ${memperc}<90}"\#888888"${else}"\#ff0000"${endif}, "separator_block_width" : 0},
-  { "full_text" : "$if_mpd_playing]$endif", "color" : "\#31F56F", "separator_block_width" : 0 },
+  { "full_text" : "$if_mpd_playing]$endif", "color" : "\#F5E89D", "separator_block_width" : 0 },
 
-  { "full_text" : "[", "color" : "\#31F56F", "separator_block_width" : 0 },
+  { "full_text" : "[", "color" : "\#F5E89D", "separator_block_width" : 0 },
   { "full_text" : "CPU >> ${cpu}%", "color" : "\#888888", "separator_block_width" : 0},
-  { "full_text" : "]", "color" : "\#31F56F", "separator_block_width" : 0 },
+  { "full_text" : "]", "color" : "\#F5E89D", "separator_block_width" : 0 },
   
-  { "full_text" : "[", "color" : "\#31F56F", "separator_block_width" : 0 },
+  { "full_text" : "[", "color" : "\#F5E89D", "separator_block_width" : 0 },
   { "full_text" : "RAM >> ${memperc}%", "color" : ${if_match ${memperc}<90}"\#888888"${else}"\#ff0000"${endif}, "separator_block_width" : 0},
-  { "full_text" : "]", "color" : "\#31F56F", "separator_block_width" : 0 },
+  { "full_text" : "]", "color" : "\#F5E89D", "separator_block_width" : 0 },
 
-  { "full_text" : "[", "color" : "\#31F56F", "separator_block_width" : 0 },
+  { "full_text" : "[", "color" : "\#F5E89D", "separator_block_width" : 0 },
   { "full_text" : "/home >> ${fs_used_perc /home}%", "color" : "\#888888", "separator_block_width" : 0},
-  { "full_text" : "]", "color" : "\#31F56F", "separator_block_width" : 5 },
+  { "full_text" : "]", "color" : "\#F5E89D", "separator_block_width" : 0 },
 
-  { "full_text" : "${time %w %d%m%y %H%M %z}" }],
+  { "full_text" : "[", "color" : "\#F5E89D", "separator_block_width" : 0 },
+  { "full_text" : "${time %w %d%m%y %H%M %z}", "color" : "\#888888", "separator_block_width" : 0 },
+  { "full_text" : "]", "color" : "\#F5E89D", "separator_block_width" : 0 }],
