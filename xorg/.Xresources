@@ -1,12 +1,11 @@
 ! Xresources file
-
 URxvt*.transparent: true
 ! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
 URxvt*.shading: 15 
 URxvt.scrollBar: false
 URxvt*foreground: White
-!URxvt*font: -*-ohsnap-medium-r-normal-*-11-*-*-*-*-*-*-*
-!URxvt*boldFont: -*-ohsnap-bold-r-normal-*-11-*-*-*-*-*-*-*
+URxvt.font: xft:Inconsolata:pixelsize=12
+
 ! Famicom Colors - rzrscm@gmail.com
 *background: #111111
 *foreground: #f8d8f8

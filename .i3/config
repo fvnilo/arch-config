@@ -16,7 +16,7 @@ set $ws7 7:misc
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
-font pango:Tamsyn 9
+font pango: Ohsnap.Icons 7 
 
 # no window border or title bar
 new_window None 
@@ -47,6 +47,8 @@ bindsym $mod+m exec thunderbird
 
 # start chromium
 bindsym $mod+Shift+w exec chromium
+
+bindsym $mod+Shift+a exec urxvt -e alsamixer
 
 # mpd control
 bindsym $mod+Control+m exec ~/bin/mpd_start
@@ -133,6 +135,7 @@ assign [class="Vlc"] "$ws5"
 
 # special windows
 for_window [title="Cli"] floating enable
+for_window [title="(?i)alsamixer"] floating enable
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
